@@ -27,11 +27,15 @@ app.use('/api/users', router)
 // path for movie routes 
 app.use('/api/movies', moviesRouter)
 
+// test url 
 app.get('/', (req, res) => {
     res.send("url is working")
 })
 
-app.listen(5000, () => {
+// define the port and default port 
+const port = process.env.PORT || 5000
+
+app.listen(port, () => {
     connectToDB()
     console.log("server is running at port 5000")
 })

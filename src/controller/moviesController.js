@@ -73,6 +73,7 @@ export const updateMovie = async (req, res) => {
     }
 }
 
+// delete movie api 
 export const deleteMovie = async (req, res) => {
     const { id } = req.params
     try {

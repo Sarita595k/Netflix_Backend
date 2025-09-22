@@ -35,6 +35,7 @@ app.get('/', (req, res) => {
 // define the port and default port 
 const port = process.env.PORT || 5000
 
+// listening the port
 app.listen(port, () => {
     connectToDB()
     console.log("server is running at port 5000")

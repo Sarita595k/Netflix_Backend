@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import isURL from "validator/lib/isURL.js";
+// import isURL from "validator/lib/isURL.js";
 
 const moviesSchema = new mongoose.Schema({
     title: {

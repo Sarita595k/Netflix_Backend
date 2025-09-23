@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config({ path: 'config.env' })
 import cors from 'cors'
 import { connectToDB } from './src/db/config.js'
+
 // importing user routes
 import router from './src/routes/userRoutes.js'
 import moviesRouter from './src/routes/moviesRoutes.js'
